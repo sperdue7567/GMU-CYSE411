@@ -274,6 +274,8 @@ Your controls must include:
 
 ### Mitigation Table
 
+Fill the mitigation table only for threats with treatment equal avoid and mitigate.
+
 | Threat | Preventive Control | Detective Control | Corrective Control |
 |------|------|------|------|
 | Threat 1 | | | |
@@ -309,14 +311,3 @@ Corrective
 4. What architectural changes could eliminate this vulnerability class?
 
 ---
-
-# Submission
-
-Students must submit:
-
-1. Completed threat enumeration table
-2. Bug Bar definitions
-3. Likelihood and Impact formulas
-4. DREAD evaluation table
-5. Mitigation analysis
-6. Reflection answers
