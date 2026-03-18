@@ -230,17 +230,23 @@ if (amount <= 0)
 
 ---
 
+
 ## 🛡️ Defense-in-Depth Applied
+===============================
 
 This solution uses multiple layers:
 
-Layer	Protection
-Session	HttpOnly, SameSite
-Authentication	bcrypt
-Request validation	CSRF token
-Authorization	role checks
-Data protection	ownership validation
-Logic validation	input constraints
+| Layer                | Protection                          | Purpose                                      |
+|---------------------|-----------------------------------|----------------------------------------------|
+| Session             | HttpOnly, SameSite cookies         | Prevent client-side access and CSRF exposure |
+| Authentication      | bcrypt hashing                     | Protect stored passwords                     |
+| Request Validation  | CSRF token                         | Ensure request origin and user intent        |
+| Authorization       | Role-based access control          | Restrict actions based on user permissions   |
+| Data Protection     | Ownership validation               | Ensure users access only their own data      |
+| Logic Validation    | Input constraints (e.g., amount > 0)| Prevent workflow and business logic abuse    |
+This solution uses multiple layers:
+
+
 
 ## 🧠 Secure Coding Mindset
 
