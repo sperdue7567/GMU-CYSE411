@@ -1,4 +1,4 @@
-name: DevSecOps First Pipeline
+name: DevSecOps First Pipeline in class
 
 on: [workflow_dispatch]
 
